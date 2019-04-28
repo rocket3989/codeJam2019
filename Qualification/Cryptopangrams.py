@@ -16,12 +16,6 @@ for test in range(0,tests):
             break
         counter += 1
 
-    # 6 6 6 15
-    #2 3 2 3  5
-
-    # 6 6 15
-    #3 2 3  5
-
     primes = [inputVals[counter] // math.gcd(inputVals[counter],inputVals[counter + 1])]
     
     for val in inputVals[counter:]:
@@ -30,26 +24,15 @@ for test in range(0,tests):
     for val in inputVals[counter:0:-1]:
         primes.insert(0,val // primes[0])
 
-    
-    """
-    for x,y in zip(inputVals[::],inputVals[1::]):
-        primes.append(math.gcd(x,y))
-
-    primes.append(inputVals[-1]/primes[-1])
-
-    """
-
-
-
-    print (primes)
+    #print (primes)
     
     keyPrimes = sorted(list(set(primes)))
 
-    print(keyPrimes)
+    #print(keyPrimes)
 
     primesAlpha = dict(zip(keyPrimes, string.ascii_uppercase))
 
-    print(primesAlpha)
+    #print(primesAlpha)
 
     print("Case #{}: ".format(test+1), end="") 
 

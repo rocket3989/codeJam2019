@@ -9,25 +9,6 @@
 
 using namespace std;
 
-#define x first
-#define y second
-
-typedef long double ld;
-
-typedef unsigned long long lli;
-
-
-int maxOf(int a, int b){
-    return (a > b ? a : b);
-}
-
-int minOf(int a, int b){
-    return (a < b ? a : b);
-}
-
-
-
-
 int main(){
     cin.tie(NULL);
     ios_base::sync_with_stdio(false);

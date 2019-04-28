@@ -3,29 +3,7 @@
 #include <cstdlib>
 #include <utility>
 #include <string>
-
 using namespace std;
-
-#define x first
-#define y second
-
-typedef unsigned long long lli;
-
-
-int maxOf(int a, int b){
-    return (a > b ? a : b);
-}
-
-int minOf(int a, int b){
-    return (a < b ? a : b);
-}
-vector<pair <int,int>> points;
-vector<int> score;
-
-int net [250][250] = {0};
-
-int R, C;
-
 
 
 int main(){
