@@ -39,10 +39,10 @@ int main(){
 
         vector <int> xUpper, xLower, yUpper, yLower;
         
-        xUpper.assign(Q,0);
-        xLower.assign(Q,0);
-        yUpper.assign(Q,0);
-        yLower.assign(Q,0);
+        xUpper.assign(Q + 1,0);
+        xLower.assign(Q + 1,0);
+        yUpper.assign(Q + 1,0);
+        yLower.assign(Q + 1,0);
         
         for(int i = 0; i < P; i++){
             cin >> x >> y >> D;
@@ -63,12 +63,12 @@ int main(){
             }
         }
 
-        int xBest = xLower[0] - xUpper[0], yBest = yLower[0] - yUpper[0];
+        int xBest = 0, yBest = 0;
         x = 0, y = 0;
 
         int sum = 0;
 
-        for(int i = 1; i < Q; i++){
+        for(int i = 1; i < Q + 1; i++){
             sum += xLower[i-1] - xUpper[i];
             if(sum > xBest){
                 x = i; 
@@ -76,7 +76,7 @@ int main(){
             }
         }
         sum = 0;
-        for(int i = 1; i < Q; i++){
+        for(int i = 1; i < Q + 1; i++){
             sum = sum + (yLower[i-1] - yUpper[i]);
             if(sum > yBest){
                 y = i; 
