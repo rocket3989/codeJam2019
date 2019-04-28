@@ -1,4 +1,4 @@
-
+﻿
 # Created by https://www.gitignore.io/api/c++,python,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=c++,python,visualstudiocode
 
@@ -161,7 +161,7 @@ dmypy.json
 .pyre/
 
 ### VisualStudioCode ###
-.vscode/*
+*/.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
