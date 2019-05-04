@@ -18,7 +18,7 @@ for test in range(1,T + 1):
     
     counts = {'A':[],'B':[],'C':[],'D':[],'E':[]}
 
-    for i in range(1,115,5):
+    for i in values:
         print(i + 1)
         res = input()
         counts[res].append(i)
@@ -52,6 +52,6 @@ for test in range(1,T + 1):
         print(c,end="")
     print()
 
-    res = int(input())
+    res = input()
     if res == 'N':
         break
