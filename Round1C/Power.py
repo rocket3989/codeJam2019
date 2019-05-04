@@ -9,7 +9,6 @@ for test in range(1,T + 1):
         res = input()
         counts[res].append(i)
 
-
     for key, value in counts.items():
         if len(value) == 23:
             result.append(key)

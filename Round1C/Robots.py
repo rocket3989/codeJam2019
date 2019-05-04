@@ -19,8 +19,6 @@ for test in range(1,T + 1):
         for move in moves:
             taken[move[count % len(move)]].append(move)
             
-
-
         rock = (len(taken['R']) != 0) 
         paper = (len(taken['P']) != 0) 
         snip = (len(taken['S']) != 0)
