@@ -31,4 +31,3 @@ for test in range(0,T):
     if res == -1:
         break
 
-
